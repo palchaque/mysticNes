@@ -4,16 +4,13 @@
 
 int main(int argc, char* argv[])
 {
-    bool running = true;
     mysticNes::Emulator emulator;
     emulator.init();
 
     emulator.loadROM(argv[1]);
 
-    while(running)
-    {
-        emulator.step();
-    }
+    emulator.run();
+
 
     return 0;
 }

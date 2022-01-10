@@ -9,8 +9,13 @@
 #include <cstdint>
 #include <memory>
 
+#include <SDL.h>
+
+#include "interrupts.h"
 #include "cpu.h"
 #include "memory.h"
+#include "ppu.h"
+#include "input.h"
 
 namespace mysticNes {
 
@@ -18,15 +23,26 @@ namespace mysticNes {
     {
     public:
         Emulator();
-        void step();
+        void run();
         void loadROM(const char* romPath);
         void init();
-        void setMemory(Memory&&);
         uint8_t readFromMemory(uint16_t address, uint16_t &cyclesCounter);
-        uint16_t cyclesCounter;
+        ~Emulator()
+        {
+            SDL_DestroyTexture(emulatorTexture);
+            SDL_DestroyRenderer(emulatorRenderer);
+            SDL_DestroyWindow(emulatorWindow);
+            SDL_Quit();
+        }
     private:
-        std::shared_ptr<CPU> emulatorCPU;
-        Memory emulatorMemory;
+        std::shared_ptr<Memory> emulatorMemory;
+        std::unique_ptr<CPU> emulatorCPU;
+        std::shared_ptr<Input> emulatorInput;
+        std::shared_ptr<Interrupts> emulatorInterrupts;
+        std::unique_ptr<PPU> emulatorPPU;
+        SDL_Window *emulatorWindow;
+        SDL_Renderer *emulatorRenderer;
+        SDL_Texture *emulatorTexture;
     };
 
 }

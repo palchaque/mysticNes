@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.14.2, 2021-11-08T20:58:56. -->
+<!-- Written by QtCreator 4.14.2, 2022-01-10T20:09:39. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -227,6 +227,7 @@
        <value type="QString">all</value>
       </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
@@ -240,6 +241,7 @@
        <value type="QString">clean</value>
       </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
@@ -332,13 +334,13 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">mysticNES</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.mysticNES</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">mysticNES</value>
-    <value type="QString" key="RunConfiguration.Arguments">/home/palchaque/rom.nes</value>
+    <value type="QString" key="RunConfiguration.Arguments">&quot;/home/palchaque/Donkey Kong Jr. (U) (PRG1) [!].nes&quot;</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/tmp/QtCreator-NvoRMm/qtc-cmake-JoGxGpYT</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/palchaque/build-mysticNES-Desktop_Qt_6_0_1_GCC_64bit-Debug</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
